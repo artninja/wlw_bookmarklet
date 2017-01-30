@@ -93,7 +93,7 @@ function exec(btn,url,page_cnt){
       var wp = ((win/cnt)*100).toFixed(1);
 
       str += "<tr>";
-      str += "<td width='64px' align='center'><img width=\"64px\" src=" + key + "></td>"
+      str += "<td width='48px' align='center'><img width=\"48px\" src=" + key + "></td>"
       str += "<td align='right'><b>" + cnt + "</b>戦</td>";
       str += "<td align='right'><b><font color='#a50000'>" + win + "</b></font>勝</td>"
       str += "<td align='right'><b><font color='#007ae1'>" + lose + "</b></font>敗</td>"
@@ -129,8 +129,9 @@ if(!($("#bml").size())){
     var url = $(match_block).children("a").attr("href");
     var date = url.slice(-10)
     var play_cnt = $(match_block).find(".matchlog_list_total").html();
+    var win_cnt = $(match_block).find(".matchlog_list_win").html();
     var page_cnt = Math.ceil(play_cnt/10)
-    var str = "<div id="+date+"><a onclick='javascript:exec(this,\"" + url + "\"," + page_cnt + ");'>キャスト別対戦成績を表示する</a></div>"
+    var str = "<div id="+date+"><div>全体勝率:" + ((win_cnt/play_cnt)*100).toFixed(1) + "%</div><a onclick='javascript:exec(this,\"" + url + "\"," + page_cnt + ");'>キャスト別対戦成績を表示する</a></div>"
     $(this).find(".block_matchlog_match").after(str);
   });
 }
