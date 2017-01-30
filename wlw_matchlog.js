@@ -82,7 +82,7 @@ function exec(btn,url,page_cnt){
       }
     })
 
-    var str = "<table align='center' border='1'>";
+    var str = "<table align='center' border='0'>";
     for(key in result_array){
 
       var win = result_array[key].win;
