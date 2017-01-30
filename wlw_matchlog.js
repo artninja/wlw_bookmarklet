@@ -93,7 +93,7 @@ function exec(btn,url,page_cnt){
       var wp = ((win/cnt)*100).toFixed(1);
 
       str += "<tr>";
-      str += "<td align='right'><img width=\"30%\" src=" + key + "></td>"
+      str += "<td width='64px' align='center'><img width=\"64px\" src=" + key + "></td>"
       str += "<td align='right'><b>" + cnt + "</b>戦</td>";
       str += "<td align='right'><b><font color='#a50000'>" + win + "</b></font>勝</td>"
       str += "<td align='right'><b><font color='#007ae1'>" + lose + "</b></font>敗</td>"
