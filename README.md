@@ -3,7 +3,7 @@
 ## 使用方法
 以下をブックマークのURLの部分に書いて登録する。
 ```
-javascript:(function(b,c,a){null==document.getElementById(c)?(a=b.createElement("script"),a.src="https://rawgit.com/u5am1n/wlw_bookmarklet/develop/wlw_matchlog.js",a.id=c,b.body.appendChild(a)):disp_err(1)})(document,"wlw_bml");
+javascript:(function(b,c,a){null==document.getElementById(c)?(a=b.createElement("script"),a.src="https://rawgit.com/u5am1n/wlw_bookmarklet/master/wlw_matchlog.js",a.id=c,b.body.appendChild(a)):disp_err(1)})(document,"wlw_bml");
 ```
 
 Wonderland.NETの対戦履歴のページ(https://wonderland-wars.net/matchlog_sub.html)で上記ブックマークレットと実行する。
